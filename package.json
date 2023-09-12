@@ -1,5 +1,22 @@
 {
+  "name": "docker_comment_trigger",
+  "version": "1.0.0",
+  "description": "Triggering containerised cypress runs from GitHub projects commments",
+  "main": "spec.cy.js",
+  "scripts": {
+    "cypress:test:chrome": "npx cypress run -b chrome",
+    "test": "npm run cypress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2i-Andrew/docker_comment_trigger.git"
+  },
+  "author": "Andrew Gordon <andrew.gordon@2itesting.com>",
+  "homepage": "https://github.com/2i-Andrew/docker_comment_trigger.git",
+  "dependencies": {
+    "cypress": "^12.9.0"
+  },
   "devDependencies": {
-    "@types/cypress": "^1.1.3"
+    "cypress-split": "^1.3.5"
   }
 }
