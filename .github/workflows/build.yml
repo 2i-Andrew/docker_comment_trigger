@@ -9,8 +9,6 @@ jobs:
       image: cypress/browsers:node18.12.0-chrome106-ff106
       options: --user 1001
     steps:
-      - name: Reinstall dependencies
-        run: npm install
       - name: Checkout
         uses: actions/checkout@v4
       - name: Cypress run
